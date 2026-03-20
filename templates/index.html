@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Resume Builder</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Poppins;
+background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.card{
+width:450px;
+padding:35px;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.robot{
+width:70px;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+input,textarea,select{
+width:100%;
+padding:10px;
+margin:7px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+textarea{
+height:70px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#667eea;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#5a67d8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img class="robot" src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png">
+
+<h2>AI Resume Builder</h2>
+
+<form action="/preview" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email">
+
+<input type="text" name="phone" placeholder="Phone Number">
+
+<textarea name="skills" placeholder="Skills"></textarea>
+
+<textarea name="education" placeholder="Education"></textarea>
+
+<textarea name="experience" placeholder="Experience"></textarea>
+
+<select name="template_choice">
+
+<option value="ai">AI Decide Template</option>
+<option value="modern">Modern Resume</option>
+<option value="developer">Developer Resume</option>
+<option value="minimal">Minimal Resume</option>
+
+</select>
+
+<button type="submit">Generate Resume</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Preview</title>
+</head>
+
+<body>
+
+<h2>Resume Preview</h2>
+
+<p><b>Template Selected:</b> {{template_name}}</p>
+
+<h1>{{data.name}}</h1>
+
+<p>{{data.email}} | {{data.phone}}</p>
+
+<h3>Professional Summary</h3>
+<p>{{summary}}</p>
+
+<h3>Technical Skills</h3>
+<p>{{data.skills}}</p>
+
+<h3>Education</h3>
+<p>{{data.education}}</p>
+
+<h3>Experience</h3>
+<p>{{data.experience}}</p>
+
+<form action="/download" method="POST">
+
+<input type="hidden" name="template" value="{{template_name}}">
+<input type="hidden" name="name" value="{{data.name}}">
+<input type="hidden" name="email" value="{{data.email}}">
+<input type="hidden" name="phone" value="{{data.phone}}">
+<input type="hidden" name="skills" value="{{data.skills}}">
+<input type="hidden" name="education" value="{{data.education}}">
+<input type="hidden" name="experience" value="{{data.experience}}">
+<input type="hidden" name="summary" value="{{summary}}">
+
+<button type="submit">Download Word Document</button>
+
+</form>
+
+</body>
+</html>

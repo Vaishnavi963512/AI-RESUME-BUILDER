@@ -3,7 +3,8 @@ import re
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="YOUR API KEY HERE
+    "
 )
 
 def generate_summary(data):

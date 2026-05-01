@@ -1,6 +1,9 @@
 
 
-https://github.com/user-attachments/assets/4a994f65-a0c9-4727-846c-e63d552a2a0f
+https://github.com/user-attachments/assets/122fdfae-0e31-418f-9d5a-ee6af08b78b8
+
+
+
 
 # 🤖 AI Resume Maker
 
